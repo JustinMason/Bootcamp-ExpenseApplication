@@ -1,0 +1,14 @@
+﻿CREATE TABLE dbo.Claims
+	(
+	ClaimId int NOT NULL,
+	ClaimsAction int NULL,
+	ClaimsResource varchar(50) NULL
+	)  ON [PRIMARY]
+GO
+ALTER TABLE dbo.Claims ADD CONSTRAINT
+	PK_Claims PRIMARY KEY CLUSTERED 
+	(
+	ClaimId
+	) WITH( STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+
+GO
